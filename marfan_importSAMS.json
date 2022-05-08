@@ -1,0 +1,106 @@
+{
+  "id": "id-C",
+  "subject": {
+    "id": "proband C",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P27Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [{
+	"type": {
+	  "id": "HP:0004421",
+	  "label": "Elevated systolic blood pressure"
+	},
+	"onset": {
+		"timestamp": "2019-03-18T00:00:00Z"
+	}
+  },{
+	"type": {
+	  "id": "HP:0032441",
+      "label": "Blood group AB"
+    },
+    "onset": {
+      "ontologyClass": {
+        "id": "HP:0003577",
+        "label": "Congenital onset"
+      }
+    }
+  },{
+	"type": {
+	  "id": "HP:0002616",
+	  "label": "Aortic root aneurysm"
+	},
+	"onset": {
+		"timestamp": "2019-03-19T00:00:00Z"
+	}
+  },{
+	"type": {
+	  "id": "HP:0030961",
+	  "label": "Microspherophakia"
+	},
+	"excluded": true
+  },{
+	"type": {
+	  "id": "HP:0001166",
+	  "label": "Arachnodactyly"
+	}
+  }],
+  "diseases": [{
+    "term": {
+      "id": "OMIM:154700 ",
+      "label": "Marfan syndrome"
+    }
+  }],
+  "medicalActions": [{
+    "treatment": {
+      "agent": {
+        "id": "DrugCentral:1610",
+        "label": "losartan"
+      },
+      "routeOfAdministration": {
+        "id": "NCIT:C38288",
+        "label": "Oral Route of Administration"
+      },
+      "doseIntervals": [{
+        "quantity": {
+          "unit": {
+            "id": "UO:0000022",
+            "label": "milligram"
+          },
+          "value": 30.0
+        },
+        "scheduleFrequency": {
+          "id": "NCIT:C64496",
+          "label": "Twice Daily"
+        },
+        "interval": {
+          "start": "2019-03-20T00:00:00Z",
+          "end": "2021-03-20T00:00:00Z"
+        }
+      }]
+    }
+  }],
+  "metaData": {
+    "created": "2022-05-07T08:16:00Z",
+    "createdBy": "Florian Herzler",
+    "resources": [{
+      "id": "hp",
+      "name": "human phenotype ontology",
+      "url": "http://purl.obolibrary.org/obo/hp.owl",
+      "version": "2021-08-02",
+      "namespacePrefix": "HP",
+      "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+    },{
+	  "id":"omim",
+	  "name":"online mendelian inheritance in man",
+	  "url":"https://omim.org",
+	  "version":"2021-08-02",
+	  "namespacePrefix":"OMIM",
+	  "iriPrefix":"https://omim.org/entry/"
+	}],
+    "phenopacketSchemaVersion": "2.0"
+  }
+}
